@@ -19,6 +19,25 @@
       // console.log(i*j);
     }
   }
+    
+  //3의 배수
+  for(let n=1; n <= 10; n++){
+    // console.log(n);
+    if(n % 3 === 0){
+      // console.log(n);
+    }
+  }
+
+  //3과 5의 배수 합
+  let result = 0;
+
+  for(let num = 1; num <= 10; num++){
+    if(num % 3 === 0 || num % 5 === 0){
+      // console.log(num); > 콘솔값 356910
+      result += num; // 연산자, 왼쪽 변수에 오른쪽에 있는 값을 더한다.
+    }
+  }
+  console.log(result);
 
 
 
