@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./reset.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <style>
+    table th {
+      background-color: olivedrab;
+      color: #fff;
+    }
+    table th, table td {
+      padding: 10px;
+      border: 1px solid #333;
+    }
+ 
+  </style>
+
+  <div>
+    <table class="list">
+      <tbody>
+        <tr>
+          <th>NO</th>
+          <th>name</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <script>
+
+    let arrNum = ['1','2','3','4','5','6','7']
+    let arrName = ['tom','mike','amy','ari','siri','google','chis']
+    // console.log(arrNum);
+    // console.log(arrName);
+
+
+    let $listTbody = $(".list tbody");
+    // $listTbody.append("<tr><td>" + arrNum[0] + "</td><td>" + arrNum[1] + "</td></tr>");
+
+    for(let i=0; i < arrNum.length; i++){
+      console.log(i);
+      $listTbody.append("<tr><td>" + arrNum[i] + "</td><td>" + arrName[i] + "</td></tr>");
+    }
+
+    // ??????????
+    // array 갯수 조건 걸었는데 arr name????
+    // 나오긴 했는데,,, 물어보기,,
+
+
+  </script>
+  
+</body>
+</html>
